@@ -1,0 +1,5 @@
+PROJECT( helloworld_proj )
+FIND_PACKAGE( OpenCV REQUIRED )
+ADD_EXECUTABLE( show-camera show-camera.cpp )
+TARGET_LINK_LIBRARIES( show-camera ${OpenCV_LIBS} )
+cmake_minimum_required(VERSION 2.8)
